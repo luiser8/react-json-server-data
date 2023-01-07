@@ -30,7 +30,7 @@ const UsersPage = () => {
       <input type="text" value={filter} onChange={(ev) => setFilter(ev.target.value) } />
       <ul>
         {Object.keys(users).map((key, user) => {
-          const { name, email, address } = users[user].ok;
+          const { name, email, address } = users[user];
           return <div key={key}>
               <li>{name} - {email}</li>
               <button onClick={() => showDetail(name,address)}>Details</button>
