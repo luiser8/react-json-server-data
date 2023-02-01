@@ -13,4 +13,3 @@ export const getUsersService = async () => {
     }));
     return users;
 }
-
